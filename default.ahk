@@ -20,20 +20,20 @@ Run, "C:\git\autohotkey-scripts\default.ahk"
 Return
 
 ;******************************************************************************
-;			Text shortcuts
-;******************************************************************************
-::]ty::Thank you,
-Return
-
-;******************************************************************************
 ;			Text replacements
 ;******************************************************************************
 ;Em-dash
-::]em::—
+::]em::
+SetKeyDelay, 40
+Send {LAlt down}{NumPad0}{NumPad1}{NumPad5}{NumPad1}{LAlt up}
+Send %A_EndChar%
 Return
 
 ;En-dash
-::]en::–
+::]en::
+SetKeyDelay, 40
+Send {LAlt down}{NumPad0}{NumPad1}{NumPad5}{NumPad0}{LAlt up}
+Send %A_EndChar%
 Return
 
 ;******************************************************************************
